@@ -1,6 +1,16 @@
 
 > Open this page at [https://k4-1.github.io/microbit-learnblink/](https://k4-1.github.io/microbit-learnblink/)
 
+## Usage
+
+##Blink #animationblink
+
+Blinks an LED at a given location
+
+```blocks
+animation.blink(0, 0, 100)
+```
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
@@ -17,13 +27,6 @@ To edit this repository in MakeCode.
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/k4-1/microbit-learnblink** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/k4-1/microbit-learnblink/raw/master/.github/makecode/blocks.png)
 
 #### Metadata (used for search, rendering)
 
