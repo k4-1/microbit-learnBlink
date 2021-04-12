@@ -1,38 +1,19 @@
-
 /**
- * Use this file to define custom functions and blocks.
- * Read more at https://makecode.microbit.org/blocks/custom
+ * Animation blocks
  */
-
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
-
-/**
- * Custom blocks
- */
-//% weight=100 color=#0fbc11 icon=""
-namespace custom {
+//% weight=80 color=#0fbc11 icon=""
+namespace animation {
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
+     * Blink an LED at a particular interval
+     * @param x horizontol led coordinate
+     * @param y vertical led coordinate
+     * @param interval time in milli second between blinks
      */
-    //% block="Please do stuff with $n and $s and $e"
-    export function doStuff(n: number, s: string, e: MyEnum): void {
+    //% block="blink x $x y $y every $interval ms"
+    export function blink(x:number ,y: number, interval: number): void {
         // Add code here
+        let sprite = game.createSprite(x, y)
+        sprite.setBlink(interval)
+        sprite.blink()
     }
-
-    /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
-     */
-    //% block = "compute fib with $value"
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
-    }
-}
+}   

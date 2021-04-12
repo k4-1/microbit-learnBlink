@@ -7,9 +7,7 @@
     },
     "files": [
         "README.md",
-        "main.py",
-        "custom.ts",
-        "main.ts"
+        "custom.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -17,5 +15,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "pyprj"
+    "preferredEditor": "tsprj"
 }
