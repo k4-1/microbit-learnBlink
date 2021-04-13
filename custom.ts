@@ -1,7 +1,7 @@
 /**
  * Animation blocks
  */
-//% weight=80 color=#0fbc11 icon=""
+//% weight=80 color=#9c8025 icon="\uf140"
 namespace animation {
     /**
      * Blink an LED at a particular interval
